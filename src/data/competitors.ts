@@ -1,0 +1,168 @@
+import type { Competitor } from '@/types'
+
+export const competitors: Competitor[] = [
+  {
+    id: 'comp-1',
+    name: 'Fourth',
+    verticals: ['hospitality'],
+    positioning: 'Legacy hospitality workforce management. Large installed base but deteriorating support and outdated UX.',
+    weaknesses: [
+      'Support quality has collapsed — average ticket resolution now 72+ hours',
+      'UI is dated (built 2012, minimal updates since)',
+      'Mobile app poorly rated (2.1 stars on App Store)',
+      'Preparing for sale — limited R&D investment',
+      'No AI capabilities on roadmap',
+    ],
+    displacementAngle: 'Fourth is preparing for a sale — their R&D investment has flatlined. Sona offers modern UX, AI-powered scheduling, and 24/7 support. Migration is straightforward with our dedicated Fourth migration team.',
+    winRate: 72,
+    keyProofPoints: [
+      'Loungers migrated from Fourth in 6 weeks with zero scheduling downtime',
+      '3 major chains switched from Fourth in the last 6 months',
+      'Our mobile app is rated 4.7 vs Fourth\'s 2.1',
+    ],
+  },
+  {
+    id: 'comp-2',
+    name: 'Harri',
+    verticals: ['hospitality'],
+    positioning: 'Hospitality-focused workforce management with hiring features. Lost focus trying to be an ATS and WFM simultaneously.',
+    weaknesses: [
+      'Split focus between ATS and scheduling — neither is best-in-class',
+      'Shift-swapping feature frequently cited as buggy',
+      'Limited payroll integration options',
+      'No UK-specific compliance features (Working Time Directive)',
+      'Customer success team understaffed',
+    ],
+    displacementAngle: 'Harri tried to be everything — ATS, scheduling, and compliance — and ended up doing none of them well. Sona is purpose-built for scheduling and workforce management. We integrate with specialist ATS tools rather than building a mediocre one.',
+    winRate: 68,
+    keyProofPoints: [
+      'Shift-swap reliability: 99.9% uptime vs Harri\'s reported 94%',
+      'UK compliance built-in: Working Time Directive, holiday accrual, break rules',
+      'Tortilla initially chose Harri — now evaluating Sona due to shift-swap issues',
+    ],
+  },
+  {
+    id: 'comp-3',
+    name: 'Allocate',
+    verticals: ['social-care'],
+    positioning: 'Legacy social care scheduling platform. Dominant market share but widely disliked by end users. Allocate merged with RLDatix.',
+    weaknesses: [
+      'UX is universally described as "painful" by users',
+      'Implementation takes 12-18 months for large providers',
+      'Mobile experience is an afterthought',
+      'Pricing is opaque and escalates aggressively at renewal',
+      'Post-RLDatix merger has created internal chaos and slower delivery',
+    ],
+    displacementAngle: 'Allocate\'s merger with RLDatix has distracted the business while their platform stagnates. Staff actively resist using it. Sona\'s modern UX drives 3x higher adoption among frontline carers, and our CQC compliance features are purpose-built for UK social care.',
+    winRate: 58,
+    keyProofPoints: [
+      'Barchester staff satisfaction with scheduling tool: 34% (Allocate) vs 89% (Sona pilot)',
+      'Implementation: 4-8 weeks vs Allocate\'s 12-18 months',
+      'Mobile-first: 78% of carer interactions happen on mobile with Sona',
+    ],
+  },
+  {
+    id: 'comp-4',
+    name: 'Civica',
+    verticals: ['social-care'],
+    positioning: 'Broad public sector software vendor with a workforce module. Not specialist in scheduling.',
+    weaknesses: [
+      'Scheduling is one of 50+ modules — not a core focus',
+      'Updates are slow (quarterly release cycle)',
+      'Complex pricing tied to broader Civica suite',
+      'Support routed through generic helpdesk — no scheduling specialists',
+      'Integration with non-Civica systems is difficult',
+    ],
+    displacementAngle: 'Civica offers scheduling as a checkbox feature inside a massive public sector suite. Sona is specialist — scheduling is all we do. This means faster innovation, deeper features, and support from people who understand workforce management, not generic helpdesk agents.',
+    winRate: 65,
+    keyProofPoints: [
+      'Feature release cadence: Sona ships weekly vs Civica quarterly',
+      'Dedicated care-sector support team with <2 hour response time',
+      'API-first: integrates with any payroll, HR, or compliance system',
+    ],
+  },
+  {
+    id: 'comp-5',
+    name: 'Access Group',
+    verticals: ['social-care', 'hospitality'],
+    positioning: 'Large UK software conglomerate. Acquired multiple care tech companies. Jack of all trades.',
+    weaknesses: [
+      'Acquisition-driven growth — products aren\'t well integrated',
+      'Customer support is consistently rated poorly (Trustpilot 1.4 stars)',
+      'Lock-in strategy: difficult to export data or integrate with competitors',
+      'Sales team makes promises that product can\'t deliver',
+      'Staff turnover in customer success is very high',
+    ],
+    displacementAngle: 'Access Group\'s growth-by-acquisition strategy means their products don\'t talk to each other well, and their support is stretched thin across dozens of product lines. Sona is a single, integrated platform with a support team that actually knows scheduling.',
+    winRate: 70,
+    keyProofPoints: [
+      'Trustpilot: Sona 4.6 stars vs Access Group 1.4 stars',
+      'Metropolitan Care switched from Access after 3 failed escalations in one month',
+      'Data portability: full export in standard formats, no lock-in',
+    ],
+  },
+  {
+    id: 'comp-6',
+    name: 'CoolCare',
+    verticals: ['social-care'],
+    positioning: 'Care home management system with basic scheduling. Good for small providers, limited at scale.',
+    weaknesses: [
+      'Not built for multi-site operations (50+ homes)',
+      'Reporting capabilities are basic',
+      'No real-time scheduling updates',
+      'Limited mobile functionality',
+      'No AI or demand-based scheduling',
+    ],
+    displacementAngle: 'CoolCare works for small care groups but breaks at scale. If you\'re growing beyond 20 homes, you need a platform built for enterprise care operations. Sona scales from 5 homes to 500 with the same UX and compliance coverage.',
+    winRate: 80,
+    keyProofPoints: [
+      'Caring Homes outgrew CoolCare at 30 homes — Sona handles their 45+ homes seamlessly',
+      'Real-time schedule updates vs CoolCare\'s batch processing',
+      'CQC audit trail: automatic compliance documentation',
+    ],
+  },
+  {
+    id: 'comp-7',
+    name: 'Deputy',
+    verticals: ['hospitality', 'retail'],
+    positioning: 'SMB-focused workforce management. Good for small businesses, not built for enterprise.',
+    weaknesses: [
+      'Designed for SMB — lacks enterprise features (multi-entity, complex compliance)',
+      'No UK-specific payroll integrations',
+      'Limited reporting for multi-site operations',
+      'No vertical-specific features (care compliance, hospitality demand forecasting)',
+      'Pricing per user becomes expensive at scale',
+    ],
+    displacementAngle: 'Deputy is great for a single-site café. But when you\'re running 100+ locations with thousands of staff, you need enterprise scheduling with demand forecasting, compliance automation, and proper multi-site management. That\'s what Sona is built for.',
+    winRate: 75,
+    keyProofPoints: [
+      'Wagamama outgrew Deputy at 80 sites — now evaluating Sona',
+      'Enterprise features: demand-based scheduling, multi-entity payroll, API integrations',
+      'Per-employee pricing (not per-user) makes Sona 40% cheaper at 1000+ employees',
+    ],
+  },
+  {
+    id: 'comp-8',
+    name: 'Planday',
+    verticals: ['hospitality'],
+    positioning: 'Danish scheduling tool popular with smaller hospitality operators. Basic but user-friendly.',
+    weaknesses: [
+      'Limited UK market presence and support hours',
+      'No compliance automation for UK employment law',
+      'Basic reporting — no demand forecasting',
+      'No enterprise features (multi-entity, complex org structures)',
+      'Limited integration ecosystem in the UK',
+    ],
+    displacementAngle: 'Planday is simple and clean — but simplicity becomes a limitation when you need UK compliance, demand forecasting, and multi-site management. Sona keeps the ease of use while adding the enterprise depth that growing chains need.',
+    winRate: 78,
+    keyProofPoints: [
+      'UK compliance built-in: Working Time Directive, holiday accrual, break rules',
+      'Demand-based scheduling reduces overstaffing by 12% on average',
+      '24/7 UK-based support vs Planday\'s Danish office hours',
+    ],
+  },
+]
+
+export const getCompetitor = (id: string) => competitors.find((c) => c.id === id)
+export const getCompetitorByName = (name: string) => competitors.find((c) => c.name === name)
+export const getCompetitorsByVertical = (vertical: string) => competitors.filter((c) => c.verticals.includes(vertical as 'hospitality' | 'social-care' | 'retail'))

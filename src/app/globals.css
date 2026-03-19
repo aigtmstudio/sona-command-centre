@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* Sona brand — Feb 2026 rebrand */
+
+  /* Core palette */
+  --color-sona-dark-teal: #021b25;
+  --color-sona-lime: #d9f99d;
+  --color-sona-lime-hover: #bef264;
+  --color-sona-lime-dark: #84cc16;
+  --color-sona-teal: #0d9488;
+  --color-sona-sky: #bae6fd;
+  --color-sona-sky-strong: #7dd3fc;
+
+  /* Surfaces */
+  --color-sona-stone-50: #fafaf9;
+  --color-sona-stone-100: #f5f5f4;
+  --color-sona-stone-200: #e7e5e4;
+  --color-sona-stone-300: #d6d3d0;
+  --color-sona-stone-400: #a8a29e;
+  --color-sona-stone-500: #78716c;
+  --color-sona-stone-900: #1c1917;
+
+  /* Status */
+  --color-sona-success: #22c55e;
+  --color-sona-warning: #f59e0b;
+  --color-sona-danger: #ef4444;
+
+  /* Fonts */
+  --font-sans: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-sona-stone-50 text-sona-stone-900 antialiased;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-sona-stone-300);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-sona-stone-400);
+  }
+}
